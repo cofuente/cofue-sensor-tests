@@ -21,8 +21,8 @@ class App extends Component {
 					<h1>You probably want my card, huh?</h1>
 				</div>
 				<MyRBC />
-			<div id="rotate-device">please rotate your device<br/>🔄</div>
-			<div id="screen-too-small">They say size doesn't matter but your screen is legit too tiny to see this page accordingly.</div>
+			<div id="rotate-device"><p>please rotate your device<br/>🔄</p></div>
+			<div id="screen-too-small">Screen is too small.</div>
 		</div>)
 	}
 }
