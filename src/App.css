@@ -225,7 +225,7 @@ img {
 		padding-right: 1%;
 		width: 90vw;
 		height: 90vw;
-		font-family: 'Comfortaa', ;
+		font-family: 'Comfortaa', cursive;
 		font-size: 2.5rem;
 		text-align: center;
 		color: white;
@@ -246,7 +246,7 @@ img {
 		padding-bottom: 25%;
 		width: 90vw;
 		height: 90vw;
-		font-family: 'Comfortaa', ;
+		font-family: 'Comfortaa', cursive;
 		font-size: 2.5rem;
 		text-align: center;
 		color: white;
@@ -261,7 +261,7 @@ img {
 	}
 }
 
-/*when its not tall enough to accomodate both */
+/* when its not tall enough to accomodate both */
 @media screen and (max-height: 750px) {
 	#intro {
 		display: none;
@@ -281,7 +281,8 @@ img {
 		animation-delay:0s;
 	}
 }
-/* @media screen and (max-height: 900px) and (orientation: portrait) {
+
+@media screen and (max-height: 1025px) and (orientation: portrait) {
 	#super {
 		padding: 0;
 		margin: 0;
@@ -302,13 +303,29 @@ img {
 	}
 	#rotate-device{
 		display: flex;
-		background-color:coral;
+		position:absolute;
+		flex-wrap: wrap;
 		padding:5%;
 		width: 50vh;
 		height: 50vh;
+		flex-direction: column;
+		justify-content: center;
 	}
-} */
-/* @media screen and (max-height: ?px) and (orientation: landscape) {
+	#rotate-device div:nth-child(1){
+		background-color:coral;
+		font-family: 'Comfortaa', cursive;
+		font-size: 7vw;
+		width: 100%;
+		text-align: center;
+	}
+	#rotate-device div:nth-child(2){
+		background-color:coral;
+		font-size: 19vw;
+		width: 100%;
+		text-align: center;
+	}
+}
+/* @media screen and (max-width: 1025px) and (orientation: landscape) {
 	#super {
 		padding: 0;
 		margin: 0;
