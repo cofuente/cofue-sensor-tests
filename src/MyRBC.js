@@ -11,8 +11,13 @@ class MyRBC extends Component {
 		const aspectRatio = windowWidth/windowHeight
 		let cardHeight, cardWidth
 		if (orientation==="portrait") {
-			cardWidth = windowWidth < 750 ? windowWidth * .9 : 700
-			cardHeight = cardWidth < 700 ? ((cardWidth * 4)/7) : 400
+			if (windowHeight < 1025){
+				cardWidth = cardWidth < 700 ? ((cardWidth * 4)/7) : 400
+				cardHeight = windowWidth < 750 ? windowWidth * .9 : 700
+			} else{
+				cardWidth = windowWidth < 750 ? windowWidth * .9 : 700
+				cardHeight = cardWidth < 700 ? ((cardWidth * 4)/7) : 400
+			}
 		}
 		if (orientation==="landscape") {
 			if (windowHeight >= 700 ) {

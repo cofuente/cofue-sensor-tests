@@ -30,10 +30,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 to do:
 1-implement mobile gyro transforms with movement
-4-populate device-too-small div w/ appropriate display
-5-also populate rotate your screen div
-6-finish media q's to display rotate div accordingly
+4-
+5-
+6-
 7-decide on alt mobile intro greeting
-8-make media q's to display the alt intro text on mobile in time
-9-figure out what's up with the text shadows
-10-
+8-switch to the alt intro text on mobile in time
+9-figure out what's up with the text shadows, maybe get rid of them?
+10-DRY up the css-typing2
