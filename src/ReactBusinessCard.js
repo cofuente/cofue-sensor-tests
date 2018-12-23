@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 export default class FloatingCard extends Component {
     constructor(props){
         super(props)
@@ -13,8 +12,12 @@ export default class FloatingCard extends Component {
             alpha: 0,
             width: this.props.width,
             height: this.props.height,
+            deviceBeta: 0,
+            deviceGamma: 0,
+            deviceAlpha: 0,
         }
 
+        this.handleOrientation = this.handleOrientation.bind(this)
         this.handleMouseMove = this.handleMouseMove.bind(this)
         this.handleMouseLeave = this.handleMouseLeave.bind(this)
         this.calculateDistance = this.calculateDistance.bind(this)
@@ -22,6 +25,17 @@ export default class FloatingCard extends Component {
         this.renderCardContent = this.renderCardContent.bind(this)
     }
 
+    componentDidMount() {
+        window.addEventListener('deviceorientation', this.handleOrientation, true)
+    }
+    handleOrientation (event) {
+        const { alpha, beta, gamma } = event
+        this.setState({
+            deviceAlpha: Math.round(alpha),
+            deviceBeta: Math.round(beta),
+            deviceGamma: Math.round(gamma),
+        })
+    }
     calculateDistance(bounds, offsetX, offsetY) {
         let distanceX = Math.pow(offsetX - bounds.width / 2, 2)
         let distanceY = Math.pow(offsetY - bounds.height / 2, 2)

@@ -29,10 +29,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ---
 
 to do:
-1-implement mobile gyro transforms with movement
+1-
 4-
-5-
-6-
+5-remove eruda script tags on lines 30-33 of index.html
+6-TESTING on Safari Firefox etc
 7-decide on alt mobile intro greeting
 8-switch to the alt intro text on mobile in time
 9-figure out what's up with the text shadows, maybe get rid of them?

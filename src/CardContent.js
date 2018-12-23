@@ -16,7 +16,6 @@ const downloadResume = (uri, name) => {
 	link.click()
 	document.body.removeChild(link)
 }
-
 export default class CardContent extends Component {
 	render() {
 		let idealFontSize = Math.round(this.props.width/70)
