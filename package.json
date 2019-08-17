@@ -1,8 +1,8 @@
 {
-  "name": "cofue",
+  "name": "cofue-sensor-tests",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://cofuente.io/",
+  "homepage": "https://cofuente.github.io/cofue-sensor-tests/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
     "@fortawesome/free-brands-svg-icons": "^5.3.1",
