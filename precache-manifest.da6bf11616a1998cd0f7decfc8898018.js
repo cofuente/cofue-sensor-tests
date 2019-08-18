@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fed123d6dd6add48ea264b28ffc826f4",
+    "revision": "668cf39c4718584df94f36ad42be163f",
     "url": "/cofue-sensor-tests/index.html"
   },
   {
-    "revision": "7d79030eace50893f5c3",
+    "revision": "ddf512c7a9e1cc79b207",
     "url": "/cofue-sensor-tests/static/css/main.08c053c7.chunk.css"
   },
   {
-    "revision": "d3117e57f1dec62c2c73",
-    "url": "/cofue-sensor-tests/static/js/2.b3b9fe8f.chunk.js"
+    "revision": "9a58da8049fce9c6d0d6",
+    "url": "/cofue-sensor-tests/static/js/2.695f8dd0.chunk.js"
   },
   {
-    "revision": "7d79030eace50893f5c3",
-    "url": "/cofue-sensor-tests/static/js/main.0f3f27c2.chunk.js"
+    "revision": "ddf512c7a9e1cc79b207",
+    "url": "/cofue-sensor-tests/static/js/main.ded138b2.chunk.js"
   },
   {
     "revision": "778221df965f13a6e15f",
