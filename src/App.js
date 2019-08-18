@@ -7,6 +7,7 @@ import './styles/App.css'
 
 const App = () => {
   const forceUpdate = useForceUpdate()
+  const handleReading = e => console.log(e)
   const handleResize = () => {
     forceUpdate()
   }
@@ -40,6 +41,10 @@ const App = () => {
         target='window'
         onResize={handleResize}
         onOrientationChange={handleOrientationChange}
+      />
+      <EventListener
+        target='window'
+        onReading={handleReading}
       />
       <TextConsole />
       <MyCard width={cardWidth} height={cardHeight} />
