@@ -22,16 +22,6 @@ module.exports = {
       }
     ],
     "jsx-quotes": ["error", "prefer-single"],
-    "comma-dangle": [
-      "error",
-      {
-        "arrays": "only-multiline",
-        "objects": "only-multiline",
-        "imports": "only-multiline",
-        "exports": "only-multiline",
-        "functions": "never"
-      }
-    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   }
