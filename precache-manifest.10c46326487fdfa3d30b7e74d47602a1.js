@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f3ae60aed237f19d359278d060e2fe96",
+    "revision": "fed123d6dd6add48ea264b28ffc826f4",
     "url": "/cofue-sensor-tests/index.html"
   },
   {
