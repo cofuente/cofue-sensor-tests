@@ -333,7 +333,7 @@ export const AbsoluteOrientationSensor = window.AbsoluteOrientationSensor ||
 
   let sensor
   const initSensor = () => {
-    const options = { frequency: 60, coordinateSystem }
+    const options = { frequency: 60, coordinateSystem: null }
     console.log('options passed into AOS constructor:', JSON.stringify(options))
     sensor = new AbsoluteOrientationSensor(options)
     // sensor is NOT an array but an object that has onreading, onactivate and onerror keys
