@@ -21,8 +21,7 @@ export default class ReactBusinessCard extends Component {
     if (props.width !== state.width || props.height !== state.height) {
       return {
         width: props.width,
-        height: props.height,
-        quaternionArr: props.quaternionArr,
+        height: props.height
       }
     }
     return null
@@ -30,7 +29,7 @@ export default class ReactBusinessCard extends Component {
 
   constructor(props) {
     super(props)
-    const { width, height, quaternionArr } = this.props
+    const { width, height } = this.props
     this.state = {
       rotateX: 0,
       rotateY: 0,
@@ -41,7 +40,6 @@ export default class ReactBusinessCard extends Component {
       alpha: 0,
       width,
       height,
-      quaternionArr,
     }
 
     this.calculateAlphaFromCenter = this.calculateAlphaFromCenter.bind(this)
@@ -64,7 +62,7 @@ export default class ReactBusinessCard extends Component {
       shadowSize: 0,
       scale: 1,
       angle: 0,
-      alpha: 0,
+      alpha: 0
     })
   }
 
@@ -93,7 +91,7 @@ export default class ReactBusinessCard extends Component {
     const distanceFromCenter = ReactBusinessCard.calculateDistance(
       bounds,
       nativeEvent.offsetX,
-      nativeEvent.offsetY,
+      nativeEvent.offsetY
     )
     const shadowMovement = centerY * 0.25
     const shadowSize = 120
@@ -106,7 +104,7 @@ export default class ReactBusinessCard extends Component {
       shadowSize,
       scale: 1.03,
       angle,
-      alpha,
+      alpha
     })
   }
 
@@ -117,7 +115,7 @@ export default class ReactBusinessCard extends Component {
       MozTransform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
       MsTransform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
       OTransform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
-      transform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
+      transform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
     }
     return children.map((childLayer, key) => {
       const num = key + 1
@@ -146,22 +144,20 @@ export default class ReactBusinessCard extends Component {
       shadowMovement,
       shadowSize,
       angle,
-      alpha,
-      quaternionArr,
+      alpha
     } = this.state
-    console.log(`we're logging from RBC the ${quaternionArr}`)
     const { children } = this.props
     const genericTransforms = {
       WebkitTransform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
       MozTransform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
       MsTransform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
       OTransform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
-      transform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
+      transform: `perspective(1000px) scale3d(${scale}, ${scale}, ${scale}) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
     }
     const rbcWrapperStyle = Object.assign({},
       {
         width,
-        height,
+        height
       },
       genericTransforms)
     const shadowStyle = Object.assign({},
@@ -195,6 +191,6 @@ ReactBusinessCard.propTypes = {
   height: PropTypes.number.isRequired,
   children: PropTypes.arrayOf(
     PropTypes.element,
-    PropTypes.instanceOf(CardContent),
-  ).isRequired,
+    PropTypes.instanceOf(CardContent)
+  ).isRequired
 }

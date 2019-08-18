@@ -17,10 +17,10 @@ const cardInfo = {
 }
 export default class MyCard extends PureComponent {
   render() {
-    const { width, height, quaternionArr } = this.props
+    const { width, height } = this.props
     return (
       <div id='my-card'>
-        <ReactBusinessCard width={width} height={height} quaternionArr={quaternionArr}>
+        <ReactBusinessCard width={width} height={height}>
           <img width={width} height={height} src={cardStock} alt='The lovely card stock I picked for this printing. Like it?' />
           <CardContent width={width} height={height} cardInfo={cardInfo} />
         </ReactBusinessCard>
