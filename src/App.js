@@ -4,7 +4,7 @@ import EventListener from 'react-event-listener'
 import MyCard from './MyCard'
 import { TextConsole } from './TextConsole'
 import './styles/App.css'
-import { AbsoluteOrientationSensor } from '../public/init'
+import { AbsoluteOrientationSensor } from './init'
 
 
 const App = () => {
