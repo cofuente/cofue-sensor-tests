@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cofue-sensor-tests/static/css/main.1cde2322.chunk.css",
+    "main.css": "/cofue-sensor-tests/static/css/main.08c053c7.chunk.css",
     "main.js": "/cofue-sensor-tests/static/js/main.ded138b2.chunk.js",
     "main.js.map": "/cofue-sensor-tests/static/js/main.ded138b2.chunk.js.map",
     "runtime~main.js": "/cofue-sensor-tests/static/js/runtime~main.72a8d5d0.js",
@@ -8,9 +8,9 @@
     "static/js/2.695f8dd0.chunk.js": "/cofue-sensor-tests/static/js/2.695f8dd0.chunk.js",
     "static/js/2.695f8dd0.chunk.js.map": "/cofue-sensor-tests/static/js/2.695f8dd0.chunk.js.map",
     "index.html": "/cofue-sensor-tests/index.html",
-    "precache-manifest.e71e428668548eff9a31b41fe6812de7.js": "/cofue-sensor-tests/precache-manifest.e71e428668548eff9a31b41fe6812de7.js",
+    "precache-manifest.da6bf11616a1998cd0f7decfc8898018.js": "/cofue-sensor-tests/precache-manifest.da6bf11616a1998cd0f7decfc8898018.js",
     "service-worker.js": "/cofue-sensor-tests/service-worker.js",
-    "static/css/main.1cde2322.chunk.css.map": "/cofue-sensor-tests/static/css/main.1cde2322.chunk.css.map",
+    "static/css/main.08c053c7.chunk.css.map": "/cofue-sensor-tests/static/css/main.08c053c7.chunk.css.map",
     "static/media/card.png": "/cofue-sensor-tests/static/media/card.cad8bdb1.png",
     "static/media/resume.pdf": "/cofue-sensor-tests/static/media/resume.1b45953d.pdf"
   }
