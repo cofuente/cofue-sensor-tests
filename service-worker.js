@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cofue-sensor-tests/precache-manifest.da6bf11616a1998cd0f7decfc8898018.js"
+  "/cofue-sensor-tests/precache-manifest.02c0441c5d4f76c2b19c818541e9d0d5.js"
 );
 
 self.addEventListener('message', (event) => {
