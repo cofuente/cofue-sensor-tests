@@ -1,5 +1,5 @@
 import React from 'react'
-import AbsoluteOrientationSensor from './AOS'
+import { AbsoluteOrientationSensor } from './AOS'
 
 export class LoggableSensor extends React.Component {
   constructor() {
