@@ -3,6 +3,7 @@ import useForceUpdate from 'use-force-update'
 import EventListener from 'react-event-listener'
 import MyCard from './MyCard'
 import { TextConsole } from './TextConsole'
+import { LoggableSensor } from './sensors/LoggableSensor'
 import './styles/App.css'
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
   }
   return (
     <div id='super'>
+      <LoggableSensor />
       <EventListener
         target='window'
         onResize={handleResize}
